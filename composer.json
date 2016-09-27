@@ -1,0 +1,17 @@
+{
+  "name": "Arizona Test PHP",
+  "description": "Arizona Dev Test",
+  "keywords": ["arizona", "dev"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Airton Zanon",
+      "homepage": "http://www.php-fig.org/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ArizonaTest\\": "app/"
+    }
+  }
+}

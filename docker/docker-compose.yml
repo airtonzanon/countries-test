@@ -1,0 +1,20 @@
+version: '2'
+services:
+  arizona-webserver:
+    image: nginx:latest
+    command: "nginx -g 'daemon off;'"
+    container_name: arizona-webserver
+    volumes:
+        - ..:/var/www/arizona-test
+        - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+        - ./nginx/conf.d:/etc/nginx/conf.d
+    ports:
+     - "80:80"
+    working_dir: /var/www/arizona-test
+
+  arizona-php-fpm:
+    build: ./php-fpm
+    container_name: arizona-php-fpm
+    volumes:
+      - ..:/var/www/arizona-test
+      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.0/fpm/conf.d/99-overrides.ini
