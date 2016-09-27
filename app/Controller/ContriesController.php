@@ -8,14 +8,16 @@
 
 namespace ArizonaTest\Controller;
 
-use ArizonaTest\Model\Country;
+use ArizonaTest\Model\Country,
+    ArizonaTest\Service\CreateCsvFile;
 
 class ContriesController
 {
 
     public function download()
     {
-
+        $countries = Country::getList();
+        CreateCsvFile::bodyFile($countries, 'countries.csv');
     }
 
     public function list()

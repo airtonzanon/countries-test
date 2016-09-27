@@ -11,7 +11,7 @@
 <body>
 <div class="container">
     <div class="row-fluid col-md-offset-1 col-md-10">
-        <a class="btn btn-primary col-md-6">
+        <a class="btn btn-primary col-md-6" href="/countries/download">
             Download CSV
         </a>
         <a class="btn btn-primary col-md-6" href="/countries/list">
