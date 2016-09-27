@@ -21,12 +21,7 @@ class ContriesController
     public function list()
     {
         $countries = Country::getList();
-        
-        foreach($countries as $country){
-            echo $country->getCountryName() . ' - ';
-            echo $country->getCountryCode() . '<br/>';
-        }
-
+        include_once __DIR__ . '/../View/countries/list.php';
     }
 
 }
