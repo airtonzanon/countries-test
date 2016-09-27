@@ -13,7 +13,7 @@ class HomeController
 
     public function index()
     {
-        include_once __DIR__ . '/../View/home.html';
+        include_once __DIR__ . '/../View/home.php';
     }
 
 }

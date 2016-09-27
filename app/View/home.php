@@ -14,7 +14,7 @@
         <a class="btn btn-primary col-md-6">
             Download CSV
         </a>
-        <a class="btn btn-primary col-md-6">
+        <a class="btn btn-primary col-md-6" href="/countries/list">
             List Contries
         </a>
     </div>
