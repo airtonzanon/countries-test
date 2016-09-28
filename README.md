@@ -3,7 +3,7 @@
 ## Docker
 
 * Requisitos: Ter instalado na máquina o docker e o docker-compose
-* Caso haja algum serviço na porta 80 ou 9000 o container poderá ter problemas ao subir
+* Caso haja algum serviço na porta 80 o container poderá ter problemas ao subir
 
 ```bash
 cd docker
